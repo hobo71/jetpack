@@ -21,4 +21,5 @@ module.exports = [
 	'modules/verification-tools.php',
 	'modules/wpcom-block-editor/class-jetpack-wpcom-block-editor.php',
 	'modules/private.php',
+	'modules/private/',
 ];
