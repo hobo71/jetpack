@@ -12,8 +12,10 @@
             "dist": {
                 "type": "path",
                 "url": "./packages/jetpack-connection",
-                "reference": "3582144c8cef33882acf8b04fd437254507d8773",
-                "shasum": null
+                "reference": "50382005f1c2d410e87816df0083d9dee35c87f0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "7.*.*"
             },
             "type": "library",
             "autoload": {
