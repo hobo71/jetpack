@@ -29,15 +29,6 @@ env:
 # so it doesn't need to be re-defined below.
 matrix:
   include:
-  # The versions listed below run within Precise distro with PHP 5.2 due to Travis limitation
-  # Hard-coding the versions since WP 5.2 has a PHP 5.6 minimum support.
-  # When removing this, remove corresponding setup functions in setup-travis.sh.
-  - php: "5.2"
-    env: WP_MODE=single WP_BRANCH=5.1
-    dist: precise
-  - php: "5.2"
-    env: WP_MODE=single WP_BRANCH=5.0
-    dist: precise
   - if: branch !~ /(^branch-.*-built)/
     language: node_js
     env: WP_TRAVISCI="yarn lint"
@@ -86,15 +77,12 @@ notifications:
      recipients:
        - enej.bajgoric@automattic.com
        - georgestephanis@automattic.com
-       - jeremy@automattic.com
        - miguel@automattic.com
        - rocco@automattic.com
        - smart@automattic.com
        - eric.binnion@automattic.com
        - allendav@automattic.com
        - beau@automattic.com
-       - kraft@automattic.com
-       - oscar@automattic.com
        # Encrypted Slack notification address
        - secure: "WQdTdmYuifSW0hiJGXpQGKystMASC50QvxHlyUL5SM3h5GP8aCgeSsHuXvKPe3dT3Pffhk0dSHBfDtdWFwSHW/upURhg0vs4dm7+nxxvGZiTPzKcuAIjgvCoqWM7teyda/XqFGNSnv+XsT34uoyPhhFgd45T3oS+QQ3aNCruFak="
 
